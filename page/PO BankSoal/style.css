@@ -190,6 +190,7 @@ a:hover i {
    .content {
     flex-direction: column;
     gap: 1rem;
+    padding: 10px;
    }
 
    aside {
