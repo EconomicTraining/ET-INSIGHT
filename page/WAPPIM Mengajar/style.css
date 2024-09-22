@@ -20,6 +20,36 @@ header {
     color: white;
 }
 
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+
+nav h2 {
+    font-size: 1rem;
+    background-color: #507687;
+    height: fit-content;
+    padding: 0.5rem;
+    border-radius: 999px;
+    padding-inline: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+nav h2:hover {
+    background-color: white;
+    color: #144c5d;
+}
+
+
+
 main {
     margin: 1rem;
     margin-top: 1rem;
@@ -174,6 +204,10 @@ a:hover i {
 
 
 @media screen and (max-width:480px) {
+    nav h1 {
+        font-size: 1.4rem;
+    }
+    
     main {
         padding: 1rem;
     }
