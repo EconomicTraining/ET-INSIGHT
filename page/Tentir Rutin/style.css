@@ -207,6 +207,10 @@ td, th {
    aside {
     justify-content: center;
    }
+
+   aside video {
+    height: auto;
+   }
 }
 
 
@@ -214,6 +218,8 @@ td, th {
     nav h1 {
         font-size: 1.4rem;
     }
+
+
     
     main {
         padding: 1rem;
