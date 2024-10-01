@@ -144,6 +144,7 @@ button:hover {
     background-color: #fdf2ba;
     color: black;
     box-shadow: 0px 0px 0px 2px #144c5d;
+    cursor: pointer;
 }
 
 
@@ -246,3 +247,4 @@ td, th {
         border-radius: 10px;
     }
 }
+
