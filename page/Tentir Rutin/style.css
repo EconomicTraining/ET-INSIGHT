@@ -234,6 +234,7 @@ td, th {
     .container {
         margin: 0;
         padding: 0.8rem;
+        margin-bottom: 1rem;
     }
 
     td, th {
