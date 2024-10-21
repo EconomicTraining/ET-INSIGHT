@@ -142,6 +142,10 @@ button {
     transition: all 0.2s ease-in-out;
 }
 
+a {
+    text-decoration: none;
+}
+
 button:hover {
     background-color: #fdf2ba;
     color: black;
@@ -216,3 +220,6 @@ a:hover i {
         margin: 0;
     }
 }
+
+
+
