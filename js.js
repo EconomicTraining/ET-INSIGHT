@@ -5,7 +5,7 @@ const syafa = 'Syafa Pasya Saqinah<br>Malang<br>Jatuh untuk belajar, bangkit unt
 const ulfa = 'Ulfatul Khoiroh<br>Batu<br>Tetap cengar cengir walau masalah terus mengalir'
 const zahra = 'Zahra Nur Fadilah <br>Malang<br>Setiap kesulitan selalu ada kemudahan, setiap masalah pasti ada solusi'
 const chelsea = 'Chelsea Priskila <br> Lumajang <br> Jangan lupa bersyukur'
-const keyran = ''
+const keyran = 'Keyran Davian Jaya<br>Jakarta<br>Learn now, flex later, success is earned, not given! '
 const berliana = 'Berliana<br>Sesulit apapun tantangan yang dihadapi, pasti akan ada jalan keluar untuk meraih kemenangan'
 const micko = 'Rayzaldi Micko Ananta<br>Donomulyo<br>Sukses itu relatif, makin sukses makin baanyak yang minta traktir'
 const belum = 'gtw ini sapa'
@@ -51,7 +51,7 @@ container.addEventListener("click", function (e) {
     if( e.target.id == 7 )
     text.innerHTML = chelsea
     if( e.target.id == 8 )
-    text.innerHTML = belum
+    text.innerHTML = keyran
     if( e.target.id == 9 )
     text.innerHTML = berliana
     if( e.target.id == 10 )
