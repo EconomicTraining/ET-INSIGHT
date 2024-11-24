@@ -364,8 +364,13 @@ img.displaySlide {
 }
 
 @media screen and (max-width:480px) {
+    .container {
+        padding-inline: 8px;
+    }
+    
     .hp {
         display: block;
+        width: 100%;
     }
 
     .desktop {
@@ -374,7 +379,7 @@ img.displaySlide {
 
     .container-1 {
         flex-direction: column-reverse;
-        padding-inline: 0;
+        padding-inline: 20px;
         display: relative;
     }
 
