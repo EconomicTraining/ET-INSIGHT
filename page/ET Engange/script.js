@@ -27,3 +27,81 @@ var x = setInterval(function () {
     document.getElementById("countdown").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+
+
+
+
+
+
+const slides = document.querySelectorAll('.slides img')
+let slidesIndex = 0
+let IntervalId = null
+
+document.addEventListener('DOMContentLoaded', initializeSlider)
+
+function initializeSlider () {
+  if ( slides.length > 0 ) {
+    slides[slidesIndex].classList.add('displaySlide')
+    IntervalId = setInterval(nextSlide, 5000)
+  }
+}
+
+function showSlide( index ) {
+  if ( index >= slides.length ) {
+    slidesIndex = 0
+  } else if ( index < 0 ) {
+    slidesIndex = slides.length - 1
+  }
+
+  slides.forEach(slide => {
+    slide.classList.remove('displaySlide')
+  })
+
+  slides[slidesIndex].classList.add('displaySlide')
+}
+
+function prevSlide () {
+  clearInterval(IntervalId)
+  slidesIndex = slidesIndex - 1
+  showSlide(slidesIndex)
+}
+
+
+function nextSlide () {
+  slidesIndex++
+  showSlide(slidesIndex)
+}
+
+const nextButton = document.querySelector('.slider .next')
+const prevButton = document.querySelector('.slider .prev')
+
+nextButton.addEventListener('click', nextSlide)
+prevButton.addEventListener('click', prevSlide)
+
+
+
+
+
+
+
+
+const container = document.querySelector('.container-video')
+const video = document.getElementById('lala')
+const playButton = document.getElementById('play')
+const closeButton = document.getElementById('closeButton')
+
+playButton.addEventListener('click', function(){
+  video.removeAttribute('muted')
+  video.currentTime = 0
+  video.play()
+  container.classList.remove('display-none')
+  video.muted = false
+})
+
+closeButton.addEventListener("click", function () {
+  container.classList.add("display-none");
+  video.pause(); // Berhenti memutar video
+  video.muted = true; // Muted video
+});
